@@ -1,0 +1,9 @@
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\obj\Debug\DistributedMemCache.csprojResolveAssemblyReference.cache
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\DistributedMemCache.dll
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\DistributedMemCache.pdb
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\Newtonsoft.Json.dll
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\StackExchange.Redis.dll
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\Newtonsoft.Json.xml
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\bin\Debug\StackExchange.Redis.xml
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\obj\Debug\DistributedMemCache.dll
+c:\users\jazeem\documents\visual studio 2015\Projects\DistrubutedMemCache\DistrubutedMemCache\obj\Debug\DistributedMemCache.pdb

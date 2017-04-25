@@ -1,0 +1,9 @@
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\UnifiedCache.Lib.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\UnifiedCache.Lib.pdb
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\StackExchange.Redis.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.xml
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\bin\Debug\StackExchange.Redis.xml
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\obj\Debug\UnifeidCache.Lib.csprojResolveAssemblyReference.cache
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\obj\Debug\UnifiedCache.Lib.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache\obj\Debug\UnifiedCache.Lib.pdb

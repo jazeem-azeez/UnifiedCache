@@ -1,0 +1,13 @@
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\CareStack.Cache.Test.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\CareStack.Cache.Test.pdb
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\UnifiedCache.Lib.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\StackExchange.Redis.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\Newtonsoft.Json.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\UnifiedCache.Lib.pdb
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\StackExchange.Redis.xml
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\bin\Debug\Newtonsoft.Json.xml
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\obj\Debug\UnifiedCache.Test.csprojResolveAssemblyReference.cache
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\obj\Debug\CareStack.Cache.Test.dll
+C:\UnifiedCache\UnifiedCache\CareStack.Cache.Test\obj\Debug\CareStack.Cache.Test.pdb
