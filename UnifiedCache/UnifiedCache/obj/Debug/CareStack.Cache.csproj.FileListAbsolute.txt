@@ -1,8 +1,8 @@
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\CareStack.Cache.dll
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\CareStack.Cache.pdb
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.dll
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\StackExchange.Redis.dll
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.xml
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\StackExchange.Redis.xml
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\obj\Debug\CareStack.Cache.dll
-C:\Users\jazeem\Documents\Visual Studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\obj\Debug\CareStack.Cache.pdb
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\CareStack.Cache.dll
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\CareStack.Cache.pdb
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\StackExchange.Redis.dll
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\bin\Debug\StackExchange.Redis.xml
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\obj\Debug\CareStack.Cache.dll
+C:\Users\jazeem\Documents\visual studio 2015\Projects\DistrubutedMemCache\CareStack.Cache\obj\Debug\CareStack.Cache.pdb

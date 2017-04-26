@@ -1,0 +1,9 @@
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\UnifiedCache.dll
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\UnifiedCache.pdb
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\Newtonsoft.Json.dll
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\StackExchange.Redis.dll
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\Newtonsoft.Json.xml
+C:\UnifiedCache\UnifiedCache\UnifiedCache\bin\Debug\StackExchange.Redis.xml
+C:\UnifiedCache\UnifiedCache\UnifiedCache\obj\Debug\UnifiedCache.csprojResolveAssemblyReference.cache
+C:\UnifiedCache\UnifiedCache\UnifiedCache\obj\Debug\UnifiedCache.dll
+C:\UnifiedCache\UnifiedCache\UnifiedCache\obj\Debug\UnifiedCache.pdb

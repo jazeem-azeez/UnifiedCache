@@ -6,8 +6,8 @@
     <ProjectGuid>{7A205BE5-05CD-449E-BEDA-AB7BF3A0D4B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CareStack.Cache.Test</RootNamespace>
-    <AssemblyName>CareStack.Cache.Test</AssemblyName>
+    <RootNamespace>UnifiedCache.Test</RootNamespace>
+    <AssemblyName>UnifiedCache.Test</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,9 +54,9 @@
     <Compile Include="UnifiedCache\BasicStoreTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnifiedCache\UnifeidCache.Lib.csproj">
+    <ProjectReference Include="..\UnifiedCache\UnifiedCache.csproj">
       <Project>{A43CA822-1DE6-4C4B-B4CC-0B2F492E6A39}</Project>
-      <Name>UnifeidCache.Lib</Name>
+      <Name>UnifiedCache</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

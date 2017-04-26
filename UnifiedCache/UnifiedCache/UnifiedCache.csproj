@@ -7,8 +7,8 @@
     <ProjectGuid>{A43CA822-1DE6-4C4B-B4CC-0B2F492E6A39}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnifiedCache.Lib</RootNamespace>
-    <AssemblyName>UnifiedCache.Lib</AssemblyName>
+    <RootNamespace>UnifiedCache</RootNamespace>
+    <AssemblyName>UnifiedCache</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -51,10 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UnifiedCache\IBackPlane.cs" />
     <Compile Include="UnifiedCache\IPubSubBackPlane.cs" />
     <Compile Include="MemStore\MemCacheRedisBackPlane.cs" />
     <Compile Include="MemStore\MemStorage.cs" />
-    <Compile Include="RedisStore\RedisFactory.cs" />
+    <Compile Include="Utility\RedisFactory.cs" />
     <Compile Include="RedisStore\RedisStorage.cs" />
     <Compile Include="UnifiedCache\UnfiedCacheType.cs" />
     <Compile Include="UnifiedCache\UnifiedCacheFactory.cs" />
