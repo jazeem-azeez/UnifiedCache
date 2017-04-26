@@ -1,26 +1,34 @@
-﻿using System;
+﻿using UnifiedCache.MemStore;
+using UnifiedCache.RedisStore;
+using System;
 using System.Collections.Specialized;
 using System.Configuration;
-using UnifiedCache.Lib.MemStore;
-using UnifiedCache.Lib.RedisStore;
 
-namespace UnifiedCache.Lib.UnifiedCache
+namespace UnifiedCache.UnifiedCache
 {
+    /// <summary>
+    /// This servers as the factory method that handles instantiate of cache instances
+    /// </summary>
     public class UnifiedCacheFactory
     {
-        public static IUnifiedCache GetUnifiedCache(UnifiedCacheType type)
+        /// <summary>
+        /// Gets the unified cache.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <returns></returns>
+        public static IUnifiedCache GetUnifiedCache(UnifiedCacheStorageTypes type)
         {
             switch (type)
             {
-                case UnifiedCacheType.RedisCache:
+                case UnifiedCacheStorageTypes.RedisCache:
                     {
                         return GetNewRedisCacheInstance();
                     }
-                case UnifiedCacheType.MemCache:
+                case UnifiedCacheStorageTypes.MemCache:
                     {
                         return GetNewMemCacheInstance();
                     }
-                case UnifiedCacheType.FromConfig:
+                case UnifiedCacheStorageTypes.FromConfig:
                     {
                         return GetNewCacheInstanceFromConfig();
                     }
@@ -28,6 +36,11 @@ namespace UnifiedCache.Lib.UnifiedCache
             return null;
         }
 
+        /// <summary>
+        /// Gets the new cache instance from configuration.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="System.Exception">Unknown Default Cache Type in UnifiedCacheFactorySettings </exception>
         private static IUnifiedCache GetNewCacheInstanceFromConfig()
         {
             var section = ConfigurationManager.GetSection("UnifiedCacheFactorySettings") as NameValueCollection;
@@ -44,8 +57,16 @@ namespace UnifiedCache.Lib.UnifiedCache
             }
         }
 
+        /// <summary>
+        /// Gets the new memory cache instance.
+        /// </summary>
+        /// <returns></returns>
         private static IUnifiedCache GetNewMemCacheInstance() => new UnifiedCache(new MemStorage());
 
+        /// <summary>
+        /// Gets the new redis cache instance.
+        /// </summary>
+        /// <returns></returns>
         private static IUnifiedCache GetNewRedisCacheInstance() => new UnifiedCache(new RedisStorage());
     }
 }

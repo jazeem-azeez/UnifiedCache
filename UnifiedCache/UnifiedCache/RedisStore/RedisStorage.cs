@@ -1,19 +1,34 @@
-﻿using StackExchange.Redis;
+﻿using UnifiedCache.UnifiedCache;
+using UnifiedCache.Utility.Redis;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
-using UnifiedCache.Lib.UnifiedCache;
 
-namespace UnifiedCache.Lib.RedisStore
+namespace UnifiedCache.RedisStore
 {
+    /// <summary>
+    /// Redis Based Cache Storage Implementation
+    /// </summary>
+    /// <seealso cref="UnifiedCache.UnifiedCache.IStorage" />
     internal class RedisStorage : IStorage
     {
-        private IDatabase DB = null;
+        /// <summary>
+        /// </summary>
+        private readonly IDatabase DB;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RedisStorage"/> class.
+        /// </summary>
         public RedisStorage()
         {
             this.DB = RedisFactory.Connection?.GetDatabase();
         }
 
+
+        /// <summary>
+        /// Deletes the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
         public void Delete(string key)
         {
             if (IsConnected())
@@ -22,6 +37,10 @@ namespace UnifiedCache.Lib.RedisStore
             }
         }
 
+        /// <summary>
+        /// Deletes the specified keys.
+        /// </summary>
+        /// <param name="keys">The keys.</param>
         public void Delete(List<string> keys)
         {
             if (IsConnected())
@@ -36,23 +55,27 @@ namespace UnifiedCache.Lib.RedisStore
             }
         }
 
+        /// <summary>
+        /// Gets the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
         public string Get(string key)
         {
-            try
+
+            if (IsConnected())
             {
-                if (!IsConnected())
-                {
-                    return null;
-                }
                 return DB.StringGet(key);
             }
-            catch (Exception ex)
-            {
-            }
-
             return null;
         }
 
+        /// <summary>
+        /// Gets the specified key.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key">The key.</param>
+        /// <returns></returns>
         public T Get<T>(string key) where T : class
         {
             if (!IsConnected())
@@ -64,11 +87,24 @@ namespace UnifiedCache.Lib.RedisStore
             return string.IsNullOrEmpty(strObj) ? default(T) : DeSerializeFromString<T>(strObj);
         }
 
+
+        /// <summary>
+        /// Determines whether this instance is connected.
+        /// </summary>
+        /// <returns></returns>
         public bool IsConnected()
         {
             return this.DB != null && RedisFactory.Connection.IsConnected;
         }
 
+        /// <summary>
+        /// Saves the specified key.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key">The key.</param>
+        /// <param name="item">The item.</param>
+        /// <param name="expiry">The expiry.</param>
+        /// <returns></returns>
         public bool Save<T>(string key, T item, TimeSpan expiry) where T : class
         {
             if (!IsConnected())
@@ -81,16 +117,36 @@ namespace UnifiedCache.Lib.RedisStore
             return Save(key, objString, expiry);
         }
 
+        /// <summary>
+        /// Saves the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
         public bool Save(string key, string value)
         {
             return DB.StringSet(key, value);
         }
 
+        /// <summary>
+        /// Saves the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The value.</param>
+        /// <param name="expiry">The expiry.</param>
+        /// <returns></returns>
         public bool Save(string key, string value, TimeSpan expiry)
         {
             return DB.StringSet(key, value, expiry);
         }
 
+        /// <summary>
+        /// Saves the specified key.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
         public bool Save<T>(string key, T value) where T : class
         {
             if (!IsConnected())
@@ -101,13 +157,29 @@ namespace UnifiedCache.Lib.RedisStore
             return Save(key, objString);
         }
 
+        /// <summary>
+        /// Des the serialize from string.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="strObj">The string object.</param>
+        /// <returns></returns>
         private static T DeSerializeFromString<T>(string strObj) => Newtonsoft.Json.JsonConvert.DeserializeObject<T>(strObj);
 
+        /// <summary>
+        /// Serializes to string.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj">The object.</param>
+        /// <returns></returns>
         private static string SerializeToString<T>(T obj)
         {
             return Newtonsoft.Json.JsonConvert.SerializeObject(obj);
         }
 
+        /// <summary>
+        /// Invalidates the specified key.
+        /// </summary>
+        /// <param name="key">The key.</param>
         public void Invalidate(string key)
         {
             Delete(key);
